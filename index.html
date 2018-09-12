@@ -12,6 +12,18 @@
 </head>
 
 <body>
-    <h1 class="title">Sam Naish</h1>   
+    <h1 class="title">Sam Naish</h1>
+    <h2 class="about">I am <span id="skills" class="typed"></span> Engineer</h2>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+<script>
+    var typed = new Typed("#skills", {
+        strings: ["a Software", "a trainee", "a Web", "a CSS", "a HTML5"],
+        typeSpeed: 150,
+        backDelay: 1500,
+        loop: true,
+});
+</script>
+
 </body>
 </html>
