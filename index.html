@@ -1,29 +1,53 @@
-<!DOCTYPE HTML>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>Sam's Super Awesome page</title>
+        <style>
+            /* * {
+                outline: 1px solid red;
+            } */
+            body {
+                margin: 0;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                -webkit-font-smoothing: antialiased;
+                text-rendering: optimizeLegibility;
+            }
+            .section {
+                text-align: center;
+                padding: 60px;
+            }
+            .section--splash {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: aquamarine;
+                height: 65%;
+                
+            }
+            .section--dark {
+                background-color:navy; 
+                color: white;
+            }
+            .section__title {
+                font-size: 8vmin;
+            }
+            
 
-<head>
-    <meta charset="UTF-8" />
-    <title>SAM NAISH</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="A full stack development company">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <h1 class="title">Sam Naish</h1>
-    <h2 class="about">I am <span id="skills" class="typed"></span> Engineer</h2>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
-<script>
-    var typed = new Typed("#skills", {
-        strings: ["a Trainee", "a Web", "a CSS", "a HTML5", "Javascript"],
-        typeSpeed: 150,
-        backDelay: 1500,
-        loop: true,
-});
-</script>
-
-</body>
+        </style>
+    </head>
+    <body>
+        <main id="splash" class="section section--splash">
+            <h1 class="section__title">Sam Naish</h1>
+            <h2 class="section__subtitle">Junior Web Developer</h2>
+        </main>
+        <section class="section">
+            <h2 class="section__heading">About Me</h2>
+            <p class="section__content">I work in a secondary school as a LSA and I am working to improve my web development skills.</p>
+        </section>
+        <section class="section section--dark">
+            <h2 class="section__heading">Projects</h2>
+            <p class="section__content">Coming Soon!!!!</p>
+        </section>
+    </body>
 </html>
