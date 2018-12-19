@@ -81,6 +81,14 @@
                 animation-fill-mode: forwards;
                 animation-delay: 0.4s;
             }
+
+            .section__projects, .section__show-all, .section__contacts {
+                opacity: 0;
+                animation-name: fadeIn;
+                animation-duration: 0.3s;
+                animation-fill-mode: forwards;
+                animation-delay: 0.6s;
+            }
         
             #project-list {
                 list-style-type: none;
@@ -126,12 +134,7 @@
                 font-weight: bold;
             }
 
-            .show-all:hover {
-                background: rgb(232, 120, 46);
-                color: green;
-            }
-
-            .show-all {
+            .section__show-all {
                 text-decoration: none;
                 display: block;
                 width: 200px;
@@ -143,6 +146,11 @@
                 border-radius: 4px;
                 cursor: pointer;
                 padding:10px;
+            }
+
+            .section__show-all:hover {
+                background: rgb(232, 120, 46);
+                color: green;
             }
 
             .section__contacts { 
@@ -198,7 +206,7 @@
                     <div class="project__title">Login Page</div>
                 </a>
             </div>
-            <a href="https://codepen.io/dashboard/" class="show-all" target="_blank">Show all</a>
+            <a href="https://codepen.io/dashboard/" class="section__show-all" target="_blank">Show all</a>
         </section>
         <section class="section">
             <h2 class="section__heading">My Profiles</h2>
