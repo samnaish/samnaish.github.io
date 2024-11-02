@@ -7,10 +7,10 @@ function App() {
 
   return (
     <main className="w-full min-h-screen bg-slate-50">
-      <div className="fixed h-screen w-28">
+      <div className="fixed h-screen w-12 md:w-28">
         <NavigationBar />
       </div>
-      <div className="ml-28 ">
+      <div className="ml-12 md:ml-28 ">
         <Splash />
         <Projects />
       </div>

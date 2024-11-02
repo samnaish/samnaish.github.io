@@ -4,7 +4,7 @@ type TitleComponentProps = {
 
 const TitleComponent = ({ title }: TitleComponentProps) => {
   return (
-    <div>{title}</div>
+    <div className="text-2xl mb-8 ">{title}</div>
   )
 };
 
