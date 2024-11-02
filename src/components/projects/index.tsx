@@ -1,14 +1,14 @@
-import Section from "../section";
-import ShowAll from "../showAll";
+import { Section } from "../section";
+import { TitleComponent } from "../Title";
 
-
-export default function Projects() {
+const Projects = () => {
     return (
-        <section className="section section--lighter" id="projects">
+        <Section id="projects" className="p-16 bg-orange-500">
+            <TitleComponent title="Projects" />
             <h2 className="section__heading">What I've been up to:</h2>
             <p className="section__content">These are some of my projects...</p>
             <div className="section__projects">
-            <Section 
+                {/* <Section 
             title= "Tribute Page" 
             link="https://codepen.io/samnaish/pen/bQPpyJ?editors=1100" 
             imagLink="https://i.kinja-img.com/gawker-media/image/upload/bgmeeufntw5hjah5ofhs.jpg"
@@ -31,9 +31,10 @@ export default function Projects() {
             link="https://codepen.io/samnaish/pen/MMKVzv" 
             imagLink="https://snag.gy/S9Fbe1.jpg"
             text="Though this project was a challenging one. I felt that is was still benefical to have a go at."
-            />  
+            />   */}
             </div>
-            <ShowAll/>
-        </section>
+        </Section>
     )
 }
+
+export { Projects };
